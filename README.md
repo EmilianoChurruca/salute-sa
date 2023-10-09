@@ -56,3 +56,10 @@ Los vendedores deberán ingresar al sistema cotizador para hacer un seguimiento 
   - La función ESFUERZO = FUERZA DE ACOPLAMIENTO x VOLATILIDAD x DISTANCIA
   
   - La gran mayoría de Identity providers (Keycloak, Okta, Auth0, etc.) tiene la opción de Identidades Federadas, es decir confiar en credenciales emitidas por terceras partes que implementen el protocolo OIDC
+ 
+## SOLUCIÓN
+Mi solución consiste en separar en microservicios los modelos de facturación y ventas, incorporar al sistema el microservicio de cotizados, la comunicación entre los sistemas se realiza con un microsistema de auorización. 
+Un servicio de mensajes para enviar los correos.
+Todos los sistemas implementan HTTPS.
+
+
